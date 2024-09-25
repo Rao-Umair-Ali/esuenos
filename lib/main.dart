@@ -1,4 +1,4 @@
-import 'package:esuenos/login_page/loginScreen.dart';
+import 'package:esuenos/splashScreen/appSplashScreen.dart';
 import 'package:flutter/material.dart';
 
 main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: SplashScreen(),
     );
   }
 }

@@ -1,8 +1,29 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'dart:async';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+import 'package:esuenos/Login/login.dart';
+import 'package:flutter/material.dart';
+
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  @override
+  void initState() {
+    super.initState();
+    Timer(const Duration(seconds: 1), () {
+      Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const Login(),
+          ));
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
