@@ -38,16 +38,16 @@ class Login extends StatelessWidget {
               )
             ],
           ),
-          const Column(
+          Column(
             children: [
-              Padding(
+              const Padding(
                 padding: EdgeInsets.all(15.0),
                 child: Text(
                   "Please Enter your Mobile Number to Login/SignUp",
                   style: TextStyle(fontSize: 20),
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.all(12.0),
                 child: TextField(
                   decoration: InputDecoration(
@@ -67,7 +67,20 @@ class Login extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              ConstrainedBox(
+                  constraints:
+                      const BoxConstraints.tightFor(width: 300, height: 35),
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xff4157FF),
+                        foregroundColor: Colors.white),
+                    child: const Text("Login"),
+                  )),
             ],
           )
         ],
