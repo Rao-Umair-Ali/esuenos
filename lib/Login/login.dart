@@ -41,15 +41,16 @@ class Login extends StatelessWidget {
           Column(
             children: [
               const Padding(
-                padding: EdgeInsets.all(15.0),
+                padding: EdgeInsets.all(22.0),
                 child: Text(
-                  "Please Enter your Mobile Number to Login/SignUp",
+                  "Please Enter your Mobile Number to        Login/Signup",
                   style: TextStyle(fontSize: 20),
                 ),
               ),
               const Padding(
                 padding: EdgeInsets.all(12.0),
                 child: TextField(
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     hintText: "+92 3163522270",
                     focusedBorder: OutlineInputBorder(
